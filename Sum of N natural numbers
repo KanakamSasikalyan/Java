@@ -1,0 +1,30 @@
+
+/*
+    Program: Program to Find the Sum of First N Natural Numbers using java
+*/
+
+
+import java.util.Scanner;
+
+// method 1:
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+        }
+        System.out.println("The sum of first N Natural numbers is :"+sum);
+    }
+}
+
+//method2:
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("The sum of first N natural number is: "+(n*(n+1))/2);
+    }
+}
